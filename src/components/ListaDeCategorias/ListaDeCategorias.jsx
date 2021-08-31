@@ -4,7 +4,8 @@ class ListaDeCategorias extends Component {
 
     _handleEventoInput(e){
         if(e.key == "Enter"){
-            console.log("Adicionar categoria")
+            let valorCategoria = e.target.value;
+            this.props.adicionarCategoria(valorCategoria);
         }
     }
 
@@ -12,9 +13,12 @@ class ListaDeCategorias extends Component {
         return(
             <section>           
                 <ul>
-                    <li>
-                        Categorias
-                    </li>
+                    {this.props.categorias.map((categoria, index) =>{
+                        return (<li key={index}>
+                            {categoria}
+                        </li>)
+                    })}
+                    
                 </ul>
                 <input 
                     type="text"
