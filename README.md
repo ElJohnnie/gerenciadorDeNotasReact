@@ -1,3 +1,7 @@
+## Gerenciador de notas usando Class Components do ReactJS
+
+Projeto desenvolvido em conjunto com um curso da Alura visando o aprendizado da implementação de class components e state no ReactJS 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
